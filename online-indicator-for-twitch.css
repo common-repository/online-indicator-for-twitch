@@ -1,0 +1,32 @@
+#oift-container {
+    position: fixed;
+    z-index: 100000;
+    padding: 8px;
+    background-image: linear-gradient(to bottom right, #000, #666);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	cursor: pointer;
+	color: #ffffff;
+}
+#oift-container a.oift-twitch {
+    text-decoration:none;
+	cursor: pointer;
+}
+#oift-container:hover a.oift-twitch {
+    text-decoration:none !important;
+}
+#oift-container:hover a.oift-twitch span {
+	transition: all 0.5s linear;
+}
+
+#oift-container a.oift-twitch .oift-status-text-live {
+    display: none;
+}
+#oift-container a.oift-twitch .oift-status-text-offline {
+    display: inline;
+}
+#oift-container.live a.oift-twitch .oift-status-text-live {
+    display: inline;
+}
+#oift-container.live a.oift-twitch .oift-status-text-offline {
+    display: none;
+}
